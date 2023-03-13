@@ -28,7 +28,7 @@ class App extends StatelessWidget {
         BlocProvider(
           create: (context) => UserClickBloc(),
         )
-      ], child: const MovieListView()),
+      ], child: const GameListView()),
     );
   }
 }

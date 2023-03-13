@@ -3,6 +3,7 @@ import 'package:bloc_tutorial/assets/app_string.dart';
 import 'package:bloc_tutorial/features/game/bloc/list_api_bloc/list_api_bloc.dart';
 import 'package:bloc_tutorial/features/game/bloc/user_click_bloc/user_click_bloc.dart';
 import 'package:bloc_tutorial/features/game/model/game_response.dart';
+import 'package:bloc_tutorial/features/game/presentation/game_detail_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -124,6 +125,7 @@ class _GameListViewState extends State<GameListView> {
             trailing: Text(result.released.toString().split(" ")[0]),
           ),
           onTap: () {
+            navigateToOtherPage(result);
             _userClickBloc.add(UserClickListEvent(result));
           },
         );
@@ -139,6 +141,7 @@ class _GameListViewState extends State<GameListView> {
             trailing: Text(result.released.toString().split(" ")[0]),
           ),
           onTap: () {
+            navigateToOtherPage(result);
             _userClickBloc.add(UserClickListEvent(result));
           },
         );
@@ -151,6 +154,7 @@ class _GameListViewState extends State<GameListView> {
             trailing: Text(result.released.toString().split(" ")[0]),
           ),
           onTap: () {
+            navigateToOtherPage(result);
             _userClickBloc.add(UserClickListEvent(result));
           },
         );
@@ -216,5 +220,9 @@ class _GameListViewState extends State<GameListView> {
     return const Center(
       child: CircularProgressIndicator(),
     );
+  }
+
+  void navigateToOtherPage(Result _resultDetail) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => GameDetailView(resultDetail: _resultDetail)));
   }
 }
