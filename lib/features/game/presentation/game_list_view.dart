@@ -6,13 +6,13 @@ import 'package:bloc_tutorial/features/game/model/game_response.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class MovieListView extends StatefulWidget {
-  const MovieListView({Key? key}) : super(key: key);
+class GameListView extends StatefulWidget {
+  const GameListView({Key? key}) : super(key: key);
   @override
-  State<MovieListView> createState() => _MovieListViewState();
+  State<GameListView> createState() => _GameListViewState();
 }
 
-class _MovieListViewState extends State<MovieListView> {
+class _GameListViewState extends State<GameListView> {
   late ListAPIBloc _listAPIBloc;
   late UserClickBloc _userClickBloc;
 
