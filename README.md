@@ -1,10 +1,4 @@
-# Rawg App Flutter
 
+## Source code For Bloc Tutorial
 
-[![Lang](https://img.shields.io/badge/lang-flutter-blue)](https://flutter.dev/)
-[![Platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
-
-A simple Android app to display list of games written in flutter.
-
-Api is used:
-https://rawg.io/
+https://petercoding.com/flutter/2022/02/27/using-bloc-pattern-in-flutter
