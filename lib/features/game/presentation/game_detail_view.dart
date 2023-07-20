@@ -2,9 +2,6 @@ import 'package:bloc_tutorial/assets/app_color.dart';
 import 'package:bloc_tutorial/assets/app_string.dart';
 import 'package:bloc_tutorial/features/game/model/game_response.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class GameDetailView extends StatefulWidget {
   late Result resultDetail;
